@@ -1,0 +1,273 @@
+<!Doctype html>
+<html>
+ 
+ <head>
+   
+ <meta charset= "utf-8">
+    
+<title>Testing Buttons Add</title>
+
+<style type = "text/css">
+    
+  .btn-red { background=color: #ff0000; }
+   
+  .btn-green { background=color: #00ff00; }
+   
+  .btn-blue  { background=color: #0000ff; }
+   
+  .btn-gray  { width: 100px; background=color: #a9a9a9; }
+
+
+</style>
+  
+  <script>
+  
+  function do_add()
+   
+  {
+    var e_input_1;
+    
+       var i_input_1;
+   
+    var e_input_2;
+   
+    var i_input_2;
+   
+    var i_sum;
+    
+
+   
+       
+       alert("ima add");
+     
+      
+      e_input_1=document.getElementById("id_input_1");
+
+       alert("text 1=" + e_input_1.value);
+    
+       i_input_1=parseInt(e_input_1.value);
+      
+       alert("int 1=" + i_input_1);
+
+     
+    
+       e_input_2=document.getElementById("id_input_2");
+     
+       alert("text 2=" + e_input_2.value);
+     
+       i_input_2=parseInt(e_input_2.value);
+       
+       alert("int 2=" + i_input_2);
+    
+     
+       i_sum=i_input_1+i_input_2;
+       
+       alert("sum=" + i_sum)
+
+    
+       e_result=document.getElementById("id_result");
+   
+       e_result.value=i_sum;
+     
+   
+  }
+
+
+  
+
+
+ function do_multiply()
+   
+ {
+    var e_input_1;
+    
+      var i_input_1;
+  
+    var e_input_2;  
+  
+    var i_input_2;
+  
+    var i_sum;
+
+    
+
+  
+      alert("ima multiply");
+    
+      e_input_1=document.getElementById("id_input_1");
+    
+      alert("text 1=" + e_input_1.value);
+  
+      i_input_1=parseInt(e_input_1.value);
+    
+      alert("int 1=" + i_input_1);
+
+     
+   
+      e_input_2=document.getElementById("id_input_2");
+    
+      alert("text 2=" + e_input_2.value);
+ 
+      i_input_2=parseInt(e_input_2.value);
+    
+      alert("int 2=" + i_input_2);
+    
+ 
+      i_sum=i_input_1*i_input_2;
+      
+      alert("sum=" + i_sum)
+
+;    
+      e_result=document.getElementById("id_result");
+  
+      e_result.value=i_sum;
+     
+ 
+ }
+
+ 
+
+
+ function do_divide()
+  
+ {
+    var e_input_1;
+  
+    var i_input_1;
+ 
+      var e_input_2;
+  
+      var i_input_2;
+  
+    var i_sum;
+   
+ 
+
+   
+  
+      alert("ima divide");
+  
+      e_input_1=document.getElementById("id_input_1");
+   
+      alert("text 1=" + e_input_1.value);
+ 
+      i_input_1=parseInt(e_input_1.value);
+     
+      alert("int 1=" + i_input_1);
+
+     
+  
+      e_input_2=document.getElementById("id_input_2");
+   
+      alert("text 2=" + e_input_2.value);
+ 
+      i_input_2=parseInt(e_input_2.value);
+    
+      alert("int 2=" + i_input_2);
+    
+ 
+      i_sum=i_input_1/i_input_2;
+     
+      alert("sum=" + i_sum)
+
+ ;
+      e_result=document.getElementById("id_result");
+   
+      e_result.value=i_sum;
+    
+ }
+
+ 
+
+ function do_subtract()
+  
+ {
+    var e_input_1;
+  
+    var i_input_1;
+ 
+      var e_input_2;
+ 
+      var i_input_2;
+  
+    var i_sum;
+    
+
+ 
+  
+      
+      alert("ima subtract");
+  
+      e_input_1=document.getElementById("id_input_1");
+  
+      alert("text 1=" + e_input_1.value);
+   
+      i_input_1=parseInt(e_input_1.value);
+    
+      alert("int 1=" + i_input_1);
+
+     
+  
+      e_input_2=document.getElementById("id_input_2");
+  
+      alert("text 2=" + e_input_2.value);
+   
+      i_input_2=parseInt(e_input_2.value);
+    
+      alert("int 2=" + i_input_2);
+    
+ 
+      i_sum=i_input_1-i_input_2;
+     
+      alert("sum=" + i_sum)
+
+;   
+      e_result=document.getElementById("id_result");
+   
+      e_result.value=i_sum;
+     
+ 
+ }
+ 
+  </script>
+
+
+  </head>
+ 
+  <body>
+ 
+   <form method= "POST" action="x">
+  
+   Number1:
+  
+   <input id="id_input_1" type="text" />
+ 
+   <br>
+  
+   Number2:
+  
+   <input id="id_input_2" type="text" />
+  
+   <br>
+ 
+   Result:
+ 
+   <input id="id_result" type="text" />
+  
+   <br>
+ 
+   <input id="id_btn_add" type="button" onclick="do_add()" value="+" />
+  
+   <input id="id_btn_subtract" type="button" onclick="do_subtract()" value="-" />
+  
+   <input id="id_btn_multiply" type="button" onclick="do_multiply()" value="*" />
+  
+   <input id="id_btn_divide" type="button" onclick="do_divide()" value="/" />
+  
+    </form>
+  
+  </body>
+
+</html>
+
+  
